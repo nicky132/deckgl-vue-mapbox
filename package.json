@@ -1,0 +1,53 @@
+{
+  "name": "myapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "set VUE_APP_MAPBOX_TOKEN=pk.eyJ1Ijoiam9yb21lcm8iLCJhIjoiY2toa2t2NnBjMDJkYTJzcXQyZThhZTNyNSJ9.Wx6qT7xWJ-hhKHyLMNbnAQ  && vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@deck.gl/core": "^8.9.21",
+    "@deck.gl/extensions": "^8.9.21",
+    "@deck.gl/geo-layers": "^8.9.21",
+    "@deck.gl/layers": "^8.9.21",
+    "@deck.gl/mesh-layers": "^8.9.21",
+    "@loaders.gl/3d-tiles": "^3.4.7",
+    "core-js": "^3.8.3",
+    "cross-env": "^7.0.3",
+    "mapbox-gl": "^2.15.0",
+    "sass-loader": "^13.3.2",
+    "vue": "^3.2.13",
+    "vue-deck.gl": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
